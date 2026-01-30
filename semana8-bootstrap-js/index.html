@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amazonía Hogar - Inmobiliaria en Lago Agrio</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (opcional) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ============ NAVBAR / ENCABEZADO ============ -->
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#inicio">
+          <span class="brand-dot">●</span> Amazonía Hogar
+          <span class="d-none d-md-inline text-secondary fw-normal">| Lago Agrio</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+          aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#propiedades">Propiedades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO / INICIO ============ -->
+  <section id="inicio" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge text-bg-success mb-2">Inmobiliaria en Ecuador</span>
+          <h1 class="display-6 fw-bold mb-3">
+            Encuentra tu hogar ideal en <span class="text-primary">Lago Agrio</span>
+          </h1>
+
+          <p class="lead text-muted mb-4">
+            Compra, venta y alquiler de casas, departamentos y terrenos.
+            Atención personalizada y asesoría legal para que tu inversión sea segura.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <button id="btnAlerta" class="btn btn-primary btn-glow">
+              <i class="bi bi-bell-fill me-1"></i> Promoción del día
+            </button>
+            <a class="btn btn-outline-primary" href="#propiedades">
+              <i class="bi bi-house-door me-1"></i> Ver propiedades
+            </a>
+            <a class="btn btn-success" href="#contacto">
+              <i class="bi bi-chat-dots me-1"></i> Cotizar ahora
+            </a>
+          </div>
+
+          <p class="small text-secondary mt-3 mb-0">
+            *Sitio ficticio para fines académicos (puedes reemplazar datos y fotos).
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="mb-3">¿Por qué elegirnos?</h5>
+              <ul class="list-unstyled mb-0 text-muted">
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Propiedades verificadas</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Asesoría en trámites</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Atención rápida por WhatsApp</li>
+                <li><i class="bi bi-check2-circle text-success me-2"></i>Precios competitivos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTENIDO PRINCIPAL ============ -->
+  <main class="py-5">
+    <div class="container">
+
+      <!-- ======= CARRUSEL ======= -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Destacados en Lago Agrio</h2>
+          <span class="badge text-bg-primary">Bootstrap Carousel</span>
+        </div>
+
+        <div id="carruselInmo" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselInmo" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselInmo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselInmo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 carousel-img"
+                   src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=60"
+                   alt="Casa moderna destacada">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Casas familiares</h5>
+                <p>Espacios amplios y seguros para vivir tranquilo.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-img"
+                   src="https://images.unsplash.com/photo-1560448070-cb1f8b0d8b75?auto=format&fit=crop&w=1600&q=60"
+                   alt="Departamento en alquiler">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Departamentos</h5>
+                <p>Opciones céntricas y accesibles en Lago Agrio.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 carousel-img"
+                   src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=60"
+                   alt="Terreno disponible">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Terrenos</h5>
+                <p>Invierte en lotes listos para construir.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselInmo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselInmo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ======= PROPIEDADES (CARDS) ======= -->
+      <section id="propiedades" class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Propiedades disponibles</h2>
+          <span class="badge text-bg-success">Responsivo</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 property-card">
+              <img class="property-img" src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1200&q=60" alt="Casa familiar">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Casa Familiar - Barrio Central</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Lago Agrio, Sucumbíos</p>
+                <p class="mb-3">3 habitaciones · 2 baños · Patio · Garaje</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price-tag">$68,000</span>
+                  <span class="badge text-bg-primary">Venta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 property-card">
+              <img class="property-img" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=60" alt="Departamento amoblado">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Departamento Amoblado</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Sector Comercial</p>
+                <p class="mb-3">2 habitaciones · 1 baño · WiFi · Parqueadero</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price-tag">$280/mes</span>
+                  <span class="badge text-bg-warning text-dark">Alquiler</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 property-card">
+              <img class="property-img" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=60" alt="Terreno en venta">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Terreno 300 m²</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> Periferia (referencial)</p>
+                <p class="mb-3">Con escritura · Acceso a servicios básicos</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="price-tag">$22,500</span>
+                  <span class="badge text-bg-primary">Venta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= TABLA (REQUISITO) ======= -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Listado rápido (tabla)</h2>
+          <span class="badge text-bg-dark">Bootstrap Table</span>
+        </div>
+
+        <div class="table-responsive shadow-sm rounded">
+          <table class="table table-striped table-hover align-middle mb-0">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>Propiedad</th>
+                <th>Tipo</th>
+                <th>Zona</th>
+                <th class="text-end">Precio</th>
+                <th class="text-center">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Casa Familiar</td>
+                <td>Venta</td>
+                <td>Centro</td>
+                <td class="text-end">$68,000</td>
+                <td class="text-center"><span class="badge text-bg-success">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Departamento Amoblado</td>
+                <td>Alquiler</td>
+                <td>Comercial</td>
+                <td class="text-end">$280/mes</td>
+                <td class="text-center"><span class="badge text-bg-success">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Terreno 300 m²</td>
+                <td>Venta</td>
+                <td>Periferia</td>
+                <td class="text-end">$22,500</td>
+                <td class="text-center"><span class="badge text-bg-warning text-dark">Reserva</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Local Comercial</td>
+                <td>Alquiler</td>
+                <td>Centro</td>
+                <td class="text-end">$350/mes</td>
+                <td class="text-center"><span class="badge text-bg-danger">Ocupado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ======= SERVICIOS ======= -->
+      <section id="servicios" class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Servicios</h2>
+          <span class="badge text-bg-info text-dark">Bootstrap Cards</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-house-check fs-2 text-primary"></i>
+                <h5 class="mt-2">Compra / Venta</h5>
+                <p class="text-muted small mb-0">Acompañamiento desde la visita hasta la firma.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-key fs-2 text-success"></i>
+                <h5 class="mt-2">Alquiler</h5>
+                <p class="text-muted small mb-0">Opciones seguras para familias y negocios.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-file-earmark-text fs-2 text-warning"></i>
+                <h5 class="mt-2">Asesoría legal</h5>
+                <p class="text-muted small mb-0">Revisión de documentos y acompañamiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="bi bi-graph-up-arrow fs-2 text-danger"></i>
+                <h5 class="mt-2">Avalúos</h5>
+                <p class="text-muted small mb-0">Estimación del valor real para negociar mejor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= CONTACTO + FORMULARIO ======= -->
+      <section id="contacto" class="mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Contáctanos</h2>
+          <span class="badge text-bg-secondary">Validación dinámica</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <form id="formContacto" class="p-4 rounded shadow-sm bg-white" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Carlos Joseph" />
+                <div class="invalid-feedback">El nombre es obligatorio (mínimo 3 caracteres).</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" />
+                <div class="invalid-feedback">Ingresa un correo válido (ej: usuario@dominio.com).</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Quiero información sobre..."></textarea>
+                <div class="invalid-feedback">El mensaje es obligatorio (mínimo 10 caracteres).</div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-success">
+                  <i class="bi bi-send me-1"></i> Enviar
+                </button>
+                <button type="reset" class="btn btn-outline-secondary" id="btnLimpiar">
+                  Limpiar
+                </button>
+              </div>
+
+              <div class="mt-3">
+                <div id="msgExito" class="alert alert-success d-none" role="alert">
+                  ✅ ¡Mensaje enviado! Nos comunicaremos contigo pronto. (Envío simulado)
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="p-4 rounded shadow-sm bg-light h-100">
+              <h5 class="mb-2">Información</h5>
+              <p class="text-muted mb-2"><i class="bi bi-geo-alt"></i> Lago Agrio, Sucumbíos - Ecuador</p>
+              <p class="text-muted mb-2"><i class="bi bi-telephone"></i> +593 99 000 0000</p>
+              <p class="text-muted mb-4"><i class="bi bi-envelope"></i> contacto@amazoniahogar.ec</p>
+
+              <div class="alert alert-warning small mb-0">
+                <strong>Horario:</strong> Lun–Sáb, 08:00–18:00<br />
+                <span class="text-muted">Atención por WhatsApp disponible.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-dark text-light py-4 mt-4">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-1"><strong>Amazonía Hogar</strong> — Inmobiliaria en Lago Agrio</p>
+          <small class="text-secondary">© 2026 | Proyecto académico - Semana 8</small>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <a class="footer-link me-3" href="#"><i class="bi bi-facebook"></i> Facebook</a>
+          <a class="footer-link me-3" href="#"><i class="bi bi-instagram"></i> Instagram</a>
+          <a class="footer-link" href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS propio -->
+  <script src="script.js"></script>
+</body>
+</html>
